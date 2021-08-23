@@ -11,7 +11,7 @@ Devised and implemented by team Metadata Attached, which comprises Oliver Hendry
 2. Clone this repository
 3. Navigate into the `firmware/firmware` directory of the repository
 4. Run the command `make clean`, followed by `make`
-5. Navigate out of the firmware directories, and run the following commands 
+5. Navigate out of the firmware directories, and run the following commands: 
 
 `python tools/bl_build.py`
 
