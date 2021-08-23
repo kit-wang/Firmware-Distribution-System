@@ -1,0 +1,5 @@
+team group 4:
+Rollback - metadata for firmware version is not authenticated or encrypted, so we were able to change the plaintext version from firmwarev1 to version 3 and send it to the bootloader, and the bootloader accepted it
+Invalid Firmware - There are not checks for the authenticity of the ciphertext as a whole or on the firmware itself, so we were able to reorder/delete/duplicate blocks to create an invalid firmware that would still be accepted by the bootloader.
+Intellectual Property - The firmware size is unauthenticated and unencrypted, and there are no checks to compare it to the actual size of the incoming firmware, and the release message start is calculated by the fw_base + firmware_size, so by setting firmware size then booting we could read an arbitrary point in the memory past fw_base, and from there we were able to find the intellectual property flag
+planned - malicious firmware and memory read
