@@ -57,4 +57,6 @@ The bootloader accepts the transmitted data frames from `fw_update.py` as inputs
 ## Frame Structure
 
 ![](framestructure.png)
+
+
 ©2020 The MITRE Corporation. ALL RIGHTS RESERVED. Approved for public release. Distribution unlimited PR_20-00176-9.
