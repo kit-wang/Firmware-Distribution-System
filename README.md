@@ -11,11 +11,11 @@ Devised and implemented by team Metadata Attached, which comprises Oliver Hendry
 2. Clone this repository
 3. Navigate into the `firmware/firmware` directory of the repository
 4. Run the command `make clean`, followed by `make`
-5. Navigate out of the firmware directories, and run the following commands: 
+5. Navigate out of the firmware directories, and run the following commands within the tools directory
 
-`python tools/bl_build.py`
+`python bl_build.py`
 
-`python tools/fw_protect.py --infile ../firmware/firmware/gcc/main.bin --outfile ../f_prot.bin --version VERSION --message MESSAGE`
+`python fw_protect.py --infile ../firmware/firmware/gcc/main.bin --outfile ../f_prot.bin --version VERSION --message MESSAGE`
 
 `python tools/bl_emulate.py`
 
